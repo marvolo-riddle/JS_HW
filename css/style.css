@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(1, 1, 1);
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+.container .wrapper {
+  display: flex;
+}
+.container .wrapper .box {
+  width: 33%;
+}
+.container .wrapper .box ul {
+  list-style-type: none;
+  padding: 30px;
+}
+.container .wrapper .box ul li {
+  border: 1px solid white;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  padding: 15px;
+  margin: 15px;
+  color: white;
+  font-family: "Impact";
+  letter-spacing: 1.5px;
+}
+.container .wrapper .box ul .list {
+  display: none;
+}
+.container .wrapper .box1 {
+  border: 3px solid white;
+  background-color: rgba(85, 84, 84, 0.6);
+  border-radius: 12px;
+}
+
+.card {
+  display: none;
+}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #aeaeae;
+}
+.card__h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Roboto Thin";
+  letter-spacing: 1px;
+}
+.card__p {
+  font-size: 1.5rem;
+  font-family: "Roboto Thin";
+  border-bottom: 1px solid white;
+  padding-bottom: 2px;
+  color: white;
+}
+.card__button {
+  background-color: #ff6600;
+  padding: 5px;
+  font-family: "Roboto Thin";
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  width: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
