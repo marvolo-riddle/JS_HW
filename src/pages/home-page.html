@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="./../../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./../styles/css/home-page.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="text-center mt-5 mb-5">TODO LIST</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <form id="todoForm">
+              <div class="mb-3">
+                <label class="form-label">Task title</label>
+                <input type="text" name="title" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Task body</label>
+                <textarea
+                  name="description"
+                  class="form-control"
+                  placeholder="Task body"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+
+          <div class="col-8">
+            <div class="row" id="todoItems">
+              <!--                                        <div class="col-4">-->
+              <!--                                            <div class="taskWrapper">-->
+              <!--                                                <div class="taskHeading">Title</div>-->
+              <!--                                                <div class="taskDescription">Task body</div>-->
+              <!--                                            </div>-->
+              <!--                                        </div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Details</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <h4 class="title"></h4>
+          <p class="description"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script
+      src="./../scripts/todoList/constants.js"
+      type="module"
+      defer
+    ></script>
+    <script src="./../scripts/todoList/model.js" type="module" defer></script>
+    <script src="./../scripts/todoList/view.js" type="module" defer></script>
+    <script
+      src="./../scripts/todoList/controller.js"
+      type="module"
+      defer
+    ></script>
+    <script src="./../scripts/todoList/index.js" type="module" defer></script>
+  </body>
+</html>
