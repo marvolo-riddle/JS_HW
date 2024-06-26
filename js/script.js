@@ -11,7 +11,7 @@
 
     return function (...arg) {
       let key = JSON.stringify(arg);
-      e
+      
       if (cache.has(key)) {
         return cache.get(key);
       } else {
