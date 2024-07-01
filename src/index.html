@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href=".././node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="w-50 m-5">
+          <div class="mb-3">
+            <input
+              type="number"
+              id="disabledTextInput"
+              class="form-control"
+              placeholder="User ID"
+              max="100"
+              data-input-number
+            />
+            <button data-show-btn type="submit" class="btn btn-primary mt-3">
+              Show post
+            </button>
+          </div>
+        </div>
+
+        <div class="d-flex gap-5 m-5">
+          <div data-post class="d-flex flex-column w-50"></div>
+          <div data-comment class="d-flex flex-column w-50"></div>
+        </div>
+      </form>
+    </main>
+    <script src="../src/js" type="module"></script>
+  </body>
+</html>
