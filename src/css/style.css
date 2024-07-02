@@ -1,0 +1,53 @@
+body {
+    background: #eef0eb;
+}
+
+.header {
+    background-image: url(../img/Mel.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-h1 {
+    font-size: 5rem;
+    color: white;
+    opacity: 75%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.item {
+    width: 32%;
+    /*border-radius: 4px;*/
+}
+
+.title {
+    font-family: "Courier New";
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    background-color: white;
+
+}
+
+a {
+    font-family: "Courier New";
+}
+
+.photo {
+    width: 33.3%;
+}
+
+.photo-text {
+
+    font-family: 'Didot';
+
+}
